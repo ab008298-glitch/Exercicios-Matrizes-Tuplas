@@ -3,7 +3,7 @@ def somar_matrizes():
     matriz2 = []
     resultado = []
 
-    print("Digite os valores da primeira matriz: ") 
+    print("DIGITE OS VALORES DA PRIMEIRA MATRIZ")
 
     for i in range(4):
         linha = []
@@ -12,7 +12,7 @@ def somar_matrizes():
             linha.append(valor)
         matriz1.append(linha)
 
-    print("Digite os valores da segunda matriz: ")
+    print("DIGITE OS VALORES DA SEGUNDA MATRIZ")
 
     for i in range(4):
         linha = []
@@ -23,8 +23,14 @@ def somar_matrizes():
 
     for i in range(4):
         linha = []
-        for j in range (3):
+        for j in range(3):
             linha.append(matriz1[i][j] + matriz2[i][j])
         resultado.append(linha)
 
-    print(f"Resultado da soma das matrizes é: {resultado}")
+    print("RESULTADO DA SOMA: ")
+
+    for linha in resultado:
+        print(linha)
+
+
+somar_matrizes()
